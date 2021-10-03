@@ -1,0 +1,132 @@
+body {
+    background-color: rgba(255, 247, 174, 0.65);
+    /*background-image: url("../img/background.jpg");*/
+    background-blend-mode: screen;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+main{
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+
+}
+
+.grid-items{
+    background-color: rgba(108, 192, 172, 0.73);
+    padding: 10px;
+    border-radius: 20px;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    box-shadow: 10px 10px 5px rgba(168, 213, 199, 0.73);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+nav {
+    grid-area: navigation;
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav a {
+    flex: auto;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: #665544;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: #6cc0ac;
+    text-decoration: underline;
+}
+nav a:active{
+    background-color: rebeccapurple;
+    color: white;
+}
+#A{
+    background-color: rgb(206, 102, 61);
+}
+#B{
+    background-color: green;
+}
+#C{
+    background-color: skyblue;
+}
+#D{
+    background-color: yellow;
+}
+#E{
+   background-color: red;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: oblique;
+    color: #a18a7c;
+}
+
+.review-form{
+    width: 400px;
+    padding: 20px;
+    margin: 40px;
+    border: 1px solid #d8d8d8;
+}
+textarea{
+    width: 100%;
+    height: 60px;
+}
+input{
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+input#name{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.grid-items-review{
+    background-color:#d8d8d8;
+    background-image: url("../img/background.jpg");
+    background-blend-mode: screen;
+    padding: 10px;
+    border-radius: 20px;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    box-shadow: 10px 10px 5px rgba(168, 213, 199, 0.73);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 482px) and (max-width: 1024px) {
+    /* Ändra font storlek */
+    nav{
+        flex-direction: row;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    /* Ändra font storlek */
+
+    nav{
+        flex-direction: row;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
